@@ -1,5 +1,6 @@
 package com.elloiro.myapplication1;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -45,6 +46,13 @@ public class MainActivity extends AppCompatActivity
             String skm = Float.toString(km);
             text_km.setText(skm);
         }
+
+    }
+
+    public void on_click_adalt(View view)
+    {
+        Intent intent = new Intent(this, About_Activity.class);
+        startActivity(intent);
 
     }
 }
